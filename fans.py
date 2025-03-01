@@ -1,20 +1,21 @@
 import streamlit as st
 from streamlit.components.v1 import html
 
-with open("fan.html", "r", encoding="utf-8") as f:
+# Read and inject CSS/JS into HTML
+with open("fan.html", "r") as f:
     html_content = f.read()
 
-with open("fan.css", "r", encoding="utf-8") as f:
+with open("fan.css", "r") as f:
     css_content = f"<style>{f.read()}</style>"
 
-with open("fan.js", "r", encoding="utf-8") as f:
+with open("fan.js", "r") as f:
     js_content = f"<script>{f.read()}</script>"
 
-# Inject CSS and JS into the HTML
-html_content = html_content.replace("fan.css", css_content)
-html_content = html_content.replace("fan.js", js_content)
-
+html_content = html_content.replace("</body>", f"{js_content}</body>")
+html_content = html_content.replace("</head>", f"{css_content}</head>")
 
 # Render the combined content
 st.title("Fan By Shannu")
-html(html_content, height=1200)
+html(html_content, height=1100, key="dynamic_site")
+with open("styles.css", "r") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
