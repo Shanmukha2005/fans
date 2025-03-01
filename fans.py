@@ -14,6 +14,7 @@ with open("fan.js", "r", encoding="utf-8") as f:
 html_content = html_content.replace("<!-- CSS will be injected here -->", css_content)
 html_content = html_content.replace("<!-- JavaScript will be injected here -->", js_content)
 
+
 # Render the combined content
 st.title("Fan By Shannu")
-html(html_content, height=500)
+html(html_content, height=None)
