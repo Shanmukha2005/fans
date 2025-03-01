@@ -17,7 +17,11 @@
     margin: 22px;
 
 }
-
+.bg{
+    background-color: white;
+    height: 90vh;
+    background-size: cover;
+}
 .all {
     text-align: center;
 }
