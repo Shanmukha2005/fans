@@ -17,5 +17,5 @@ html_content = html_content.replace("</head>", f"{css_content}</head>")
 # Render the combined content
 st.title("Fan By Shannu")
 html(html_content, height=1100)
-with open("styles.css", "r") as f:
+with open("fan.css", "r") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
