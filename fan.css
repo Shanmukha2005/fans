@@ -12,14 +12,13 @@
 
 
 .img {
-    height: 40vh;
-    width: 40vh;
-    margin: 22px;
+    height: 30vh;
+    width: 30vh;
+    margin: 30px;
 
 }
 .bg{
     background-color: white;
-    height: 90vh;
     background-size: cover;
 }
 .all {
