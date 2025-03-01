@@ -11,8 +11,8 @@ with open("fan.js", "r", encoding="utf-8") as f:
     js_content = f"<script>{f.read()}</script>"
 
 # Inject CSS and JS into the HTML
-html_content = html_content.replace("<!-- CSS will be injected here -->", css_content)
-html_content = html_content.replace("<!-- JavaScript will be injected here -->", js_content)
+html_content = html_content.replace("fan.css", css_content)
+html_content = html_content.replace("fan.js", js_content)
 
 
 # Render the combined content
