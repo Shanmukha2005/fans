@@ -17,4 +17,4 @@ html_content = html_content.replace("<!-- JavaScript will be injected here -->",
 
 # Render the combined content
 st.title("Fan By Shannu")
-html(html_content, height=None)
+html(html_content, height=5000)
