@@ -14,14 +14,15 @@ function offbtn() {
 }
 
 function speed1btn() {
-    img.style.animation = "rotate 4s infinite linear";
-}
-
-function speed2btn() {
     img.style.animation = "rotate 2s infinite linear";
 }
 
+function speed2btn() {
+    img.style.animation = "rotate 1s infinite linear";
+}
+
 function speed3btn() {
-    img.style.animation = "rotate 0.1s infinite linear";
+    img.style.animation = "rotate 0.5s infinite linear";
 
 }
+
