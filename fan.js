@@ -22,5 +22,6 @@ function speed2btn() {
 }
 
 function speed3btn() {
-    img.style.animation = "rotate 1s infinite linear";
+    img.style.animation = "rotate 0.1s infinite linear";
+
 }
